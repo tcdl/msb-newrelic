@@ -1,0 +1,23 @@
+{
+  "name": "msb-newrelic",
+  "version": "0.4.0",
+  "description": "An instrumented version of msb for Newrelic",
+  "main": "index.js",
+  "scripts": {
+    "npmrc": "printf \"_auth = $NPM_AUTH_TOKEN\nemail = $NPM_EMAIL\n\" > .npmrc",
+    "test": "if [ -n \"${TRAVIS_TAG}\" ]; then npm run npmrc && npm publish; fi"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tcdl/msb-newrelic.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tcdl/msb-newrelic/issues"
+  },
+  "homepage": "https://github.com/tcdl/msb-newrelic",
+  "dependencies": {
+    "newrelic": "^1.19.0"
+  }
+}
