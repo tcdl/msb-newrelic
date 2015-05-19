@@ -1,4 +1,3 @@
-// Note: you will need to have installed `msb` manually to run this test
 var assert = require('assert');
 var simple = require('simple-mock');
 var msb = require('msb');

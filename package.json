@@ -19,5 +19,9 @@
   "homepage": "https://github.com/tcdl/msb-newrelic",
   "dependencies": {
     "newrelic": "^1.19.0"
+  },
+  "devDependencies": {
+    "msb": "^0.4.1",
+    "simple-mock": "^0.3.0"
   }
 }
