@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "npmrc": "printf \"_auth = $NPM_AUTH_TOKEN\nemail = $NPM_EMAIL\n\" > .npmrc",
-    "test": "if [ -n \"${TRAVIS_TAG}\" ]; then npm run npmrc && npm publish; fi"
+    "test": "node test && if [ -n \"${TRAVIS_TAG}\" ]; then npm run npmrc && npm publish; fi"
   },
   "repository": {
     "type": "git",
