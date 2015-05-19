@@ -1,6 +1,6 @@
 {
   "name": "msb-newrelic",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "An instrumented version of msb for Newrelic",
   "main": "index.js",
   "scripts": {
