@@ -4,7 +4,11 @@ var msb = require('msb');
 
 msb.plugins = msb.plugins || {};
 var mockNewrelic = msb.plugins.newrelic = {
-  agent: {}
+  agent: {
+    config: {
+      app_name: ['test']
+    }
+  }
 };
 
 simple.mock(mockNewrelic, 'addCustomParameter').returnWith();
