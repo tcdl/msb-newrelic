@@ -30,5 +30,9 @@ if (process.env.NEW_RELIC_LICENSE_KEY) {
   });
 
   debug('loaded', newrelic.agent.config.app_name);
+} else {
+  process.once('uncaughtException', function(err) {
+    throw err;
+  });
 }
 module.exports = msb;
